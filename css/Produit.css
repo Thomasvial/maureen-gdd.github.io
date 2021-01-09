@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', "Century Gothic", CenturyGothic, sans-serif;
+    font-weight: bold;
+    margin: 0em;
+    padding: 0em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*Première barre*/
+header
+{
+    background-color:white;
+}
+.logo
+{
+    height:70px;
+    width: 70px;
+    float:left;
+}
+
+.titre
+{
+    color: #F8D862 ;
+    font-size:50px;
+    margin: 0em 0em 0em 8.9%;
+    padding: 0px 0em 10px 0em;
+
+}
+
+.home, .panier
+{
+    position:relative;
+    float: right;
+    height: 40px;
+    top: -3.6em;
+    padding-right: 2em;
+}
+
+
+input {
+    position: relative;
+    float: right;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: rgba(238,243,243, 0.4);
+    border-radius: 2px 2px;
+    top: -3.6em;
+    margin-right: 2em;
+    padding:0.5em;
+    line-height: 1em;
+    vertical-align: center;
+}
+
+.loupe
+{
+    width: 1.5em;
+    height: 1.5em;  
+}
+
+button
+{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    top: -3.4em;
+    background-color: white;
+    border-style: none;
+}
+
+/* Menu de navigation déroulant */
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    position: relative;
+    top: 0px;
+}
+
+nav ul
+{
+    display: flex; /*Permet aux éléments de la barre d'être alignés*/
+    position: sticky;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px; /*Donne la largeur à la barre de nav*/
+}
+
+nav a:hover{
+    background-color: #F8D862;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #F8D862;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #EAC849;
+}
+
+
+
+
+
+
+/* Produit */ 
+.chemin
+{
+    position: relative;
+    float: left;
+    color: #402A12;
+    padding-left: 0.5em;
+    text-decoration: none;
+}
+
+.chemin a 
+{
+    color: #402A12;
+    text-decoration: none;
+}
+.retourner a{
+    position: relative;
+    float: right;
+    padding-right: 0.5em;
+    top: 1.2em;
+    font-size: 1.2em;
+    color: #2E1E0D ;
+    text-decoration: none;
+}
+.page_produit /*arrière-plan */ 
+{
+    background-color: #e9cb89;
+    height: 50em;
+    margin: 3em 0em;
+  
+}
+
+
+.produit /*grille de produits*/ 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 2em;
+    margin-right: 10em;
+}
+
+.sous_produit img /* dimension petites images*/ 
+{
+    height: 10em;
+    border-radius: 2em 2em;
+}
+
+.ours_img img
+{
+    width: auto;
+    height: 30em;
+    background-color: white;
+    border-radius: 2em 2em;
+    border: dashed #F8D862 ;
+    grid-column: 1;
+    grid-row:1;
+    margin-left: 5em;
+}
+
+.img1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.img2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.img3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+.texte
+{
+    position: relative;
+    top: -30.8em;
+    margin-left: 50em;
+    color: #402A12;
+}
+
+.texte h1 /* titre */ 
+{
+    font-size: 3em;
+    color: #2E1E0D;
+    margin-bottom: 1em;
+}
+
+.texte h2{
+    margin-bottom: 1.2em;
+}
+
+.texte p {
+    margin-bottom: 1em;
+    text-align: justify;
+    padding-right: 2em;
+}
+
+/* Bouton quantité */
+.bouton_qt label {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.2em;
+    color: #2E1E0D;
+    }
+
+.bouton_qt input {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 4em;
+    width: 4em;
+    font-size: 1.2em;
+    color: #2E1E0D;
+    border-width: 0.2em;
+    border-color: #2E1E0D ;
+}
+
+.bouton_qt {
+    display: grid;
+    grid-template-columns: repeat (2, 1em);
+    grid-auto-rows: minmax(0em, 2em); 
+    position: absolute;
+    bottom: -5.5em;
+    left: 5em;
+
+}
+
+/*Bouton ajouter panier*/
+.ajouter_panier input{
+    background-color: #2E1E0D ;
+    font-size: 1.2em;
+    color: white ;
+    width: 10em;
+    position: relative;
+    right: 46em;
+    top: -15.9em;
+    border-width: 0.2em;
+    border-color: #2E1E0D ;
+}

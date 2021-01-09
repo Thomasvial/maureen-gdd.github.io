@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/Panier.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <link rel="icon" href="img/favicon.ico" />
+    
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #e9cb89;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 25px;
+        }
+
+        .ti {
+            padding-bottom: 1em;
+            padding-top: 1.5em;
+            text-align: center;
+            color: rgb(202, 134, 8);
+        }
+
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10px;
+        }
+
+        .cart {
+            width: 300px;
+            margin: 10px;
+            margin-left: 10px;
+        }
+
+        .articles > div {
+            width: 200px;
+            margin: 20px;
+        }
+
+        div img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .prod {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tit {
+            width: 100px;
+            padding-left: 20px;
+        }
+
+        #price1, #price2, #price3, #price4 {
+            margin-right: 5px;
+        }
+
+        .inputs, input, select {
+            text-align: center;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        input {
+            width: 50px;
+        }
+
+        .addTo {
+            position: relative;
+            left: 0px;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 20px;
+            background-image: linear-gradient(to right, #ff512f, #dd2476);
+            color: beige;
+            border-width: 0px;
+        }
+        
+        .addTo:hover {
+            background-image: none;
+            background-color: red;
+            box-shadow: 0 0 20px red, 0 0 60px red, 0 0 60px red;
+        }
+
+
+        #message1, #message2, #message3, #message4 {
+            color: rgb(38, 6, 153);
+            text-align: center;
+        }
+
+        .addTo button {
+            position: absolute;
+            right: 20px;
+            border-radius: 50%;
+            color: aliceblue;
+            background-color: #ff512f;
+            border-width: 0px;
+        }
+
+        .addTo button:hover {
+            background-color: #dd2476;
+        }
+    </style>
+</head>
+<body>
+    
+
+	<section class="top-page">
+	<header class="header">
+            <a href="index.html"><img src="img/abeille.png" alt="Logo du site" class=logo></a>
+              <h1 class="titre">Beeb'ron</h1>
+              <a href="index.html"><img src="img/home.png" alt="Home" class="home"></a>
+              <!-- Barre de recherche -->
+              <form action="recherche.html" class="rechercher">
+                <input type="text" name="q" placeholder="Rechercher" value="" class="search">
+                <button class="bouton" type="submit"><img src="img/icone_loupe.png" alt="Icone de la barre de recherche" class="loupe"></button>
+              </form>
+            </header>
+            <!-- Deuxième barre -->  
+            <nav class="nav">
+              <ul class="menu">
+                <li class="deroulant"><a href="#nouveautes">Nouveautés</a>
+                  <ul class="sous">
+                    <li><a href="Nouveautés.html">Toute la collection</a></li>
+                    <li><a href="Nouveautés.html">Vêtements</a></li>
+                    <li><a href="Nouveautés.html">Accessoires</a></li>
+                    <li><a href="Nouveautés.html">Jeux</a></li>
+                    <li><a href="Nouveautés.html">De nouveau en stock !</a></li>
+                    <li><a href="Nouveautés.html">Outlet</a></li>
+                  </ul>
+                </li>
+                <li class="deroulant"><a href="#vetements">Vêtements</a>
+                  <ul class="sous">
+                    <li><a href="Vêtements.html">Toute la collection</a></li>
+                    <li><a href="Vêtements.html">Chaussettes et collants</a></li>
+                    <li><a href="Vêtements.html">Hauts</a></li>
+                    <li><a href="Vêtements.html">Bas</a></li>
+                    <li><a href="Vêtements.html">Combinaisons</a></li>
+                    <li><a href="Vêtements.html">Robes</a></li>
+                    <li><a href="Vêtements.html">Pyjamas</a></li>
+                  </ul>
+                </li>
+                <li class="deroulant"><a href="#accessoires">Accessoires</a>
+                  <ul class="sous">
+                    <li><a href="Accessoires.html">Toute la collection</a></li>
+                    <li><a href="Accessoires.html">Biberons</a></li>
+                    <li><a href="Accessoires.html">Couches</a></li>
+                    <li><a href="Accessoires.html">Accessoires cheveux</a></li>
+                    <li><a href="Accessoires.html">Masques en tissu</a></li>
+                  </ul>
+                </li>      
+                <li class="deroulant"><a href="#jeux">Jeux</a>
+                  <ul class="sous">
+                    <li><a href="Jeux.html">Toute la collection</a></li>
+                    <li><a href="Jeux.html">Livres</a></li>
+                    <li><a href="Jeux.html">Puzzles</a></li>
+                    <li><a href="Jeux.html">Jeux éducatifs</a></li>
+                    <li><a href="Jeux.html">Jeux montessori</a></li>
+                    <li><a href="Jeux.html">Jouets à fabriquer</a></li>
+                    <li><a href="Jeux.html">Paper Toys</a></li>
+                  </ul>
+                </li>
+                <li class="deroulant"><a href="#actions">Actions Beeb'ron</a>
+                  <ul class="sous">
+                    <li><a href="ActionsBeeb'ron.html">Set découvert enfant</a></li>
+                    <li><a href="ActionsBeeb'ron.html">Ruche abeille maçonne</a></li>
+                    <li><a href="ActionsBeeb'ron.html">Miels</a></li>
+                    <li><a href="ActionsBeeb'ron.html">Graines et fleurs</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+	</section>
+
+
+
+
+    <h2 class="ti">Mon panier</h2>
+    <div class="container">
+        <div class="articles">
+            <div>
+                <img src="img/vetement.jpg" alt="vêtement">
+                <div class="prod">
+                    <h3 class="tit" id="brand1">Kiabi</h3>
+                    <h4 id="price1">19.90</h4>
+                    <h4>€</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                    <select id="size1" name="size1" onclick="deleteE('message1')">
+                        <option value="Taille" disabled selected>Taille</option>
+                        <option value="0 - 1 mois">0 - 1 mois</option>
+                        <option value="1 - 3 mois">1 - 3 mois</option>
+                        <option value="3 - 6 mois">3 - 6 mois</option>
+                        <option value="6 mois - 1 an">6 mois - 1 an</option>
+                        <option value="1 an - 2 an">1 an - 2 an</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(1)">Ajouter au panier</button>
+                    </div>
+                </div>
+                <p id="message1"></p>
+            </div>
+            <div>
+                <img src="img/vetement2.jpg" alt="vêtement">
+                <div class="prod">
+                    <h3 class="tit" id="brand2">Levi's</h3>
+                    <h4 id="price2">19.90</h4>
+                    <h4>€</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                    <select id="size2" name="size2" onclick="deleteE('message2')">
+                        <option value="Taille" disabled selected>Taille</option>
+                        <option value="0 - 1 mois">0 - 1 mois</option>
+                        <option value="1 - 3 mois">1 - 3 mois</option>
+                        <option value="3 - 6 mois">3 - 6 mois</option>
+                        <option value="6 mois - 1 an">6 mois - 1 an</option>
+                        <option value="1 an - 2 an">1 an - 2 an</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(2)">Ajouter au panier</button>
+                    </div>
+                </div>
+                <p id="message2"></p>
+            </div>
+            <div>
+                <img src="img/vetement3.jpg" alt="vêtement">
+                <div class="prod">
+                    <h3 class="tit" id="brand3">Puma</h3>
+                    <h4 id="price3">16.90</h4>
+                    <h4>€</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                    <select id="size3" name="size3" onclick="deleteE('message3')">
+                        <option value="Taille" disabled selected>Taille</option>
+                        <option value="0 - 1 mois">0 - 1 mois</option>
+                        <option value="1 - 3 mois">1 - 3 mois</option>
+                        <option value="3 - 6 mois">3 - 6 mois</option>
+                        <option value="6 mois - 1 an">6 mois - 1 an</option>
+                        <option value="1 an - 2 an">1 an - 2 an</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(3)">Ajouter au panier</button>
+                    </div>
+                </div>
+                <p id="message3"></p>
+            </div>
+            <div>
+                <img src="img/vetement4.jpg" alt="vêtement">
+                <div class="prod">
+                    <h3 class="tit" id="brand4">Adidas</h3>
+                    <h4 id="price4">18.90</h4>
+                    <h4>€</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                    <select id="size4" name="size4" onclick="deleteE('message4')">
+                        <option value="Taille" disabled selected>Taille</option>
+                        <option value="0 - 1 mois">0 - 1 mois</option>
+                        <option value="1 - 3 mois">1 - 3 mois</option>
+                        <option value="3 - 6 mois">3 - 6 mois</option>
+                        <option value="6 mois - 1 an">6 mois - 1 an</option>
+                        <option value="1 an - 2 an">1 an - 2 an</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(4)">Ajouter au panier</button>
+                    </div>
+                </div>
+                <p id="message4"></p>
+            </div>
+        </div>
+        <div class="cart">
+            <h3 class="tit">Mes articles</h3>
+            <!-- list of the articles in the cart -->
+            <ul id="items"> 
+            </ul> 
+            <h3 id="total" style="text-align: right;">Total: 0 €</h3>
+        </div>
+    </div>
+
+        <a href="Achat.html"><button class="acheter" type="button">
+            Valider mon panier
+        </button></a>
+    <script>
+        
+        // Total panier
+        var total = 0;
+        // Index
+        var i = 1;
+        // Message 
+        var message = "veuillez sélectionner une taille svp";
+        // List of the amount of every product in the cart
+        var itemCost = [];
+
+        // Ajouter au panier
+        function add(n){
+            // n is the rank of the T-shirt
+            sizeId = "size" + n;
+            /* Each shirt has Id start with a root + his rank (Ex: Size id for product 1 is size1,
+             price id for product 3 is price 3 ...)*/
+            messageId = "message" + n;
+            // The size of the selected shirt
+            size = document.getElementById(sizeId).value;
+            // If the client don't select size, a message will show up
+            if (size==="size"){
+                document.getElementById(messageId).innerHTML = message;
+                return 0;
+            }
+            // Getting all Id of the selected shirt(brand ex: nike, price and quantity)
+            brand = "brand" + n;
+            priceId = "price" + n;
+            quantityId = "quantity" + n;
+            // Getting details of the selected shirt
+            // brand
+            name = document.getElementById(brand).innerHTML;
+            // price
+            price = document.getElementById(priceId).innerHTML;
+            // quantity
+            quantity = document.getElementById(quantityId).value;
+            // Creating a li element to add it to ul 
+            var node = document.createElement("LI");
+            // id of li element
+            item = "item"+i;
+            node.setAttribute("id", item)
+            // cost of the selected shirt
+            itemCost[i-1] = Number(price) * Number(quantity);
+            // Updating the index i 
+            i += 1;
+            // text of the li element
+            var textnode = document.createTextNode(name+" "+quantity+" x "+price+" €, Taille: "+ size);
+            // add the text to li element
+            node.appendChild(textnode);
+            // add li element to ul list
+            document.getElementById("items").appendChild(node);
+
+            total += Number(price) * Number(quantity);
+            // update the total
+            document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " €";
+            
+            // Add a remove button 
+            document.getElementById(item).innerHTML += '<button onclick="deleItem('+"'"+item+"'"+')">x</button>';
+            // you have to respect the order of: '' and ""
+            
+        }
+
+         // delete message when the select element is clicked
+         function deleteE(eId) {
+            document.getElementById(eId).innerHTML = ' ';
+        }
+
+        // Remove a product from the cart
+        function deleItem(eId){
+            document.getElementById(eId).remove();
+            // slice is string method
+            // eId (element Id) contain root + number (ex: item4)
+            // n is the number in eId 
+            n = Number(eId.slice(-1)) - 1;
+            // remove the cost of the product deleted from the cart
+            total -= itemCost[n];
+            // Updating the cost of products in the cart
+            document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " $"; 
+        }
+    </script>
+</body>
+</html>

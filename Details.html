@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beeb'ron</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Details.css">
+	<link rel="icon" href="img/favicon.ico" />
+
+</head>
+
+<body>
+	<section>
+		<header class="header">
+			<img src="img/abeille.png" alt="Logo du site" width="100" height="100" class=logo>
+			  <h1 class="titre">Beeb'ron</h1>
+			  <a href="MonPanier.html"><img class="panier" src="img/panier.png" alt="Panier"></a>
+			  <a href="index.html"><img src="img/home.png" alt="Home" class="home"></a>
+			  <!-- Barre de recherche -->
+			  <form action="Recherche/recherche.html" class="rechercher">
+			    <input type="text" name="q" placeholder="Rechercher" value="" id="search-query">
+			    <button class="bouton" type="submit"> <img src="img/icone_loupe.png" alt="Icone de la barre de recherche" class="loupe"> </button>
+			  </form>
+			</header>
+			<!-- Deuxième barre -->  
+			<nav class="nav">
+			  <ul class="menu">
+			    <li class="deroulant"><a href="#nouveautes">Nouveautés</a>
+			      <ul class="sous">
+			        <li><a href="Nouveautés.html">Toute la collection</a></li>
+			        <li><a href="Nouveautés.html">Vêtements</a></li>
+			        <li><a href="Nouveautés.html">Accessoires</a></li>
+			        <li><a href="Nouveautés.html">Jeux</a></li>
+			        <li><a href="Nouveautés.html">De nouveau en stock !</a></li>
+			        <li><a href="Nouveautés.html">Outlet</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#vetements">Vêtements</a>
+			      <ul class="sous">
+			        <li><a href="Vêtements.html">Toute la collection</a></li>
+			        <li><a href="Vêtements.html">Chaussettes et collants</a></li>
+			        <li><a href="Vêtements.html">Hauts</a></li>
+			        <li><a href="Vêtements.html">Bas</a></li>
+			        <li><a href="Vêtements.html">Combinaisons</a></li>
+			        <li><a href="Vêtements.html">Robes</a></li>
+			        <li><a href="Vêtements.html">Pyjamas</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#accessoires">Accessoires</a>
+			      <ul class="sous">
+			        <li><a href="Accessoires.html">Toute la collection</a></li>
+			        <li><a href="Accessoires.html">Biberons</a></li>
+			        <li><a href="Accessoires.html">Couches</a></li>
+			        <li><a href="Accessoires.html">Accessoires cheveux</a></li>
+			        <li><a href="Accessoires.html">Masques en tissu</a></li>
+			      </ul>
+			    </li>      
+			    <li class="deroulant"><a href="#jeux">Jeux</a>
+			      <ul class="sous">
+			        <li><a href="Jeux.html">Toute la collection</a></li>
+					<li><a href="Jeux.html">Livres</a></li>
+			        <li><a href="Jeux.html">Puzzles</a></li>
+			        <li><a href="Jeux.html">Jeux éducatifs</a></li>
+			        <li><a href="Jeux.html">Jeux montessori</a></li>
+			        <li><a href="Jeux.html">Jouets à fabriquer</a></li>
+			        <li><a href="Jeux.html">Paper Toys</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#actions">Actions Beeb'ron</a>
+			      <ul class="sous">
+			        <li><a href="ActionsBeeb'ron.html">Set découvert enfant</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Ruche abeille maçonne</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Miels</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Graines et fleurs</a></li>
+			      </ul>
+			    </li>
+			  </ul>
+			</nav>
+	</section>
+<h1>Descriptif technique</h1>
+
+
+<h2>Mise en page</h2>
+
+<p>Au niveau de la mise en page, nous avons utilisé plusieurs balises structurantes afin d’organiser notre code et notre rendu final (section/nav/div …).</p>
+
+<p>Dans la partie « head » du code, vous retrouverez aussi bien le titre de notre site (Beeb’ron) comme le lien vers la feuille de CSS ou certaines icônes présentes plus bas ou encore la balise <meta charset= «utf-8»> permettant d’accéder aux différents caractères existants aujourd’hui. Nous avons également décidé de rajouter une favicon pour personnaliser notre site.</p>
+
+<p>Dans la partie « body » se trouve la majorité du code.
+Le logo du site, le menu déroulant, la barre de recherche, le lien vers le panier, la barre de promotion, le message du jour, les parties « Meilleures ventes »/ « Nos produits » etc … tout se trouve dans le body.</p>
+
+<p>Enfin, dans la partie « footer », nous retrouvons des liens menant à la page « qui sommes-nous » ou à cette page même ainsi que le classique « conditions générales de ventes » par exemple.</p>
+
+
+<h2>Page d’accueil</h2>
+
+<p>Sur la page d’accueil, nous avons décidé de mettre une barre de recherche permettant d’accéder à une page de vente de nounours qui elle-même, possède des liens cliquables sur tous les nounours. Tous les liens sont identiques et renvoient vers une page descriptive du produit.</p>
+
+<p>Une barre de navigation est également présente sur la page d’accueil. Cette dernière reste fixée en haut du site jusqu'à un certain un défilement de la page web. Elle possède un menu déroulant contenu au sein de balises nav.</p>
+
+<p>Le défilement du site sera fera de façon « smooth » grâce à la commande « scroll-behavior » présente dans le fichier CSS.</p>
+
+<p>La barre « promotion du jour » se trouvant au sein de balises section possède dans son code CSS un background allant chercher une image se répétant plusieurs fois afin de donner cette suite de motifs.</p>
+
+<p>Le message du jour défile grâce à la balise "marquee" et le choix de la couleur d’arrière-plan se fait directement dans le code HTML grâce à l’attribut « bgcolor ».</p>
+
+<p>Les 3 icônes vertes (Nos magasins à votre service/Retrait en magasin sans contact/Livraison à domicile sans contact) proviennent du lien cité dans la partie head.  Elles sont appelées via la commande <i class="fas fa-Nom_Icone delivery-icon"></i> et sont ensuite disposées en flexbox grâce au fichier CSS. Nous n'avons remarqué que bien plus tard que cela correspondant à du javascript malheureusement.</p>
+
+<p>Vous trouverez en haut du site un logo de ruche permettant de retourner à l’accueil ainsi qu’un panier jaune vous menant directement à une « page panier » réalisée en partie en java pour plus de réalisme et ne pas se contenter seulement d’une redirection vers une fausse page panier.</p>
+
+<p>Les images présentes sur la page d’accueil ont une mise en page un peu spéciale grâce à la commande « display : grid ; » dans le fichier CSS. Ce module permet de créer une mise en page en définissant des relations de taille, de position et d’empilement.</p>
+
+
+<h2>Pages du menu déroulant</h2>
+
+<p>Après avoir cliqué sur « vêtements », « accessoires » etc via le menu déroulant, vous serez dirigé vers d’autres pages reprenant en grande partie le modèle de la page d’accueil mais avec l’arrière plan modifiée ainsi que la barre de navigation. Toutes ces pages ont un code.html et un code.css qui leurs sont propres.</p>
+
+<p> Au niveau de la police, nous avons dans un premier temps utilisé @font-face avec les polices présentes dans le dossier css. Cependant, pour une raison que nous n'expliquons pas, elles n'étaient pas détectés. Dans un deuxième temps, nous avons utilisé la méthode @import,cependant seulement une partie de nos textes utilisés cette police. C'est pourquoi en deuxième choix, nous avons mis Century Gothic, qui ressemble fortement à notre première police et permet un rendu homogène.</p>
+</body>
+</html>

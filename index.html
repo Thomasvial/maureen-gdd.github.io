@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beeb'ron</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+	<link rel="icon" href="img/favicon.ico" />
+
+</head>
+
+<body>
+
+	<section class="top-page">
+		<header class="header">
+			<a href="index.html"><img src="img/abeille.png" alt="Logo du site" class=logo></a>
+			  <h1 class="titre">Beeb'ron</h1>
+			  <a href="MonPanier.html"><img class="panier" src="img/panier.png" alt="Panier"></a>
+			  <a href="index.html"><img src="img/home.png" alt="Home" class="home"></a>
+			  <!-- Barre de recherche -->
+			  <form action="recherche.html" class="rechercher">
+			    <input type="text" name="q" placeholder="Rechercher" value="" id="search-query">
+			    <button class="bouton" type="submit"><img src="img/icone_loupe.png" alt="Icone de la barre de recherche" class="loupe"></button>
+			  </form>
+			</header>
+			<!-- Deuxième barre -->  
+			<nav class="nav">
+			  <ul class="menu">
+			    <li class="deroulant"><a href="#nouveautes">Nouveautés</a>
+			      <ul class="sous">
+			        <li><a href="Nouveautés.html">Toute la collection</a></li>
+			        <li><a href="Nouveautés.html">Vêtements</a></li>
+			        <li><a href="Nouveautés.html">Accessoires</a></li>
+			        <li><a href="Nouveautés.html">Jeux</a></li>
+			        <li><a href="Nouveautés.html">De nouveau en stock !</a></li>
+			        <li><a href="Nouveautés.html">Outlet</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#vetements">Vêtements</a>
+			      <ul class="sous">
+			        <li><a href="Vêtements.html">Toute la collection</a></li>
+			        <li><a href="Vêtements.html">Chaussettes et collants</a></li>
+			        <li><a href="Vêtements.html">Hauts</a></li>
+			        <li><a href="Vêtements.html">Bas</a></li>
+			        <li><a href="Vêtements.html">Combinaisons</a></li>
+			        <li><a href="Vêtements.html">Robes</a></li>
+			        <li><a href="Vêtements.html">Pyjamas</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#accessoires">Accessoires</a>
+			      <ul class="sous">
+			        <li><a href="Accessoires.html">Toute la collection</a></li>
+			        <li><a href="Accessoires.html">Biberons</a></li>
+			        <li><a href="Accessoires.html">Couches</a></li>
+			        <li><a href="Accessoires.html">Accessoires cheveux</a></li>
+			        <li><a href="Accessoires.html">Masques en tissu</a></li>
+			      </ul>
+			    </li>      
+			    <li class="deroulant"><a href="#jeux">Jeux</a>
+			      <ul class="sous">
+			        <li><a href="Jeux.html">Toute la collection</a></li>
+					<li><a href="Jeux.html">Livres</a></li>
+			        <li><a href="Jeux.html">Puzzles</a></li>
+			        <li><a href="Jeux.html">Jeux éducatifs</a></li>
+			        <li><a href="Jeux.html">Jeux montessori</a></li>
+			        <li><a href="Jeux.html">Jouets à fabriquer</a></li>
+			        <li><a href="Jeux.html">Paper Toys</a></li>
+			      </ul>
+			    </li>
+			    <li class="deroulant"><a href="#actions">Actions Beeb'ron</a>
+			      <ul class="sous">
+			        <li><a href="ActionsBeeb'ron.html">Set découvert enfant</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Ruche abeille maçonne</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Miels</a></li>
+			        <li><a href="ActionsBeeb'ron.html">Graines et fleurs</a></li>
+			      </ul>
+			    </li>
+			  </ul>
+			</nav>
+		
+			
+				<section class="promotions">
+					<div style="text-align:center">
+					<B>Promotion du jour : -70% sur les chaussettes Tigrou</B>
+					</div>
+				</section>
+		
+	</section>
+	
+	<a class="message"><marquee bgcolor="#AF8D62">Pour tout Ourson Beeb'ron acheté, une ruche parrainée !</marquee></a>
+
+	<section class="services" id="services">
+		<div class="service-item">
+			<i class="fas fa-store delivery-icon"></i>
+			<p class="service-details">Nos magasins à votre service</p>
+		</div>
+		<div class="service-item">
+			<i class="fas fa-people-carry delivery-icon"></i>
+			<p class="service-details">Retrait en magasin sans contact</p>
+		</div>
+		<div class="service-item">
+			<i class="fas fa-truck delivery-icon"></i>
+			<p class="service-details">Livraison à domicile sans contact</p>
+		</div>
+	</section>
+
+	<section class="bests-items" id="bests-items">
+		<h2 class="section-title">
+			Nos promotions
+		</h2>
+		<div class="best-sells">
+			<a class="sells-box pyjama no-grid">
+				<div class="details">
+					<p class="name">Pyjama dino</p>
+					<p class="price">14.99€</p>
+				</div>
+			</a>
+			<a class="sells-box poussette no-grid">
+				<div class="details">
+					<p class="name">Poussette</p>
+					<p class="price">99.99€</p>
+				</div>
+			</a>
+			<a class="sells-box produits no-grid">
+				<div class="details">
+					<p class="name">Produits pour bébés</p>
+					<p class="price">19.99€</p>
+				</div>
+			</a>
+			<a class="sells-box biberon no-grid">
+				<div class="details">
+					<p class="name">Biberon</p>
+					<p class="price">12.99€</p>
+				</div>
+			</a>
+		</div>
+	</section>
+
+
+
+	<section class="all-produits" id="all-produits">
+		<h2 class="section-title">
+			Nos meilleures ventes
+		</h2>
+		<div class="produits-grid">
+			<a class="produits-grid1 sells-box">
+				<div class="details">
+					<p class="name">Chaussons roses</p>
+					<p class="price">9.99€</p>
+				</div>
+			</a>
+			<a class="produits-grid2 sells-box">
+				<div class="details">
+					<p class="name">Tenue Minions</p>
+					<p class="price">19.99€</p>
+				</div>
+			</a>
+			<a class="produits-grid3 sells-box">
+				<div class="details">
+					<p class="name">Jeu en bois</p>
+					<p class="price">30€</p>
+				</div>
+			</a>
+			<a class="produits-grid4 sells-box">
+				<div class="details">
+					<p class="name">Body rayé bleu</p>
+					<p class="price">5.99€</p>
+				</div>
+			</a>
+			<a class="produits-grid5 sells-box">
+				<div class="details">
+					<p class="name">Chaussures stylax un max</p>
+					<p class="price">1000€</p>
+				</div>
+			</a>
+			<a class="produits-grid6 sells-box">
+				<div class="details">
+					<p class="name">Elephant de compagnie</p>
+					<p class="price">Prix inestimable</p>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<footer>
+	<div class="fini">
+		<ul class="fin">
+			<li class="titre_liste"> Beeb'ron </li>
+			<li><a href="QuiSommesNous.html" class="qui">Qui sommes-nous ?</a></li>
+			<li><a href="Details.html" class="qui">Détails techniques</a></li>
+		</ul>
+		<ul class="fin">
+			<li class="titre_liste"> Aide et Assistance </li>
+			<li> Assistance </li>
+			<li> Suivi commande </li>
+			<li> Livraison & Retours </li>
+		</ul>
+	</div>
+		<div class="pied" >
+			<p class="copyright"> &copy; 2020 - Beeb'ron</p>
+			<a href="" class="cgv">Conditions générales de ventes</a>
+		</div>
+	</footer>
+<p>
+
+
+</body>
+</html>
+
+<!-- Styles original
+	html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+
+}
+
+/* Tête de page */
+
+
+
+section.top-page {
+    background: url('../img/coton.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Page de bienvenue (landing page */
+
+.landing-page {
+    padding: 20em 50em;
+}
+
+.big-title {
+    color: burlywood;
+    font-size: 60em;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 2000;
+}
+
+.message {
+    color: white;
+    padding-top: 50em;
+    font-size: 1.5em;
+}
+
+.promotions 
+{ 
+    background: url('../img/motifs4.jpg');
+    border: 1em rgb(235, 221, 175);
+	margin-bottom: 0.1em;
+	background-color: rgb(70, 7, 5);
+	border-radius: 10em;
+	box-shadow: 0.2em 0.5em rgba(187, 179, 166, 0.5);
+    text-decoration: none;
+}
+
+.promo_tigrou {
+    font-size:1.5em;
+    color: rgb(199, 99, 6);
+	padding: 0.5em 1em 0.1em 3em;
+	border-bottom : 0em dotted lightgrey;
+    text-decoration: none;
+}
+
+/*Première barre*/
+header
+{
+    background-color:white;
+}
+.logo
+{
+    height:4.375em;
+    width: 4.375em;
+    float:left;
+}
+
+.titre
+{
+    color: #F8D862 ;
+    font-size:3.125em;
+    margin: 0em 0em 0em 8.9%;
+    padding: 0px 0em 10px 0em;
+
+}
+
+.home, .panier
+{
+    position:relative;
+    float: right;
+    height: 2.5em;
+    top: -3.6em;
+    padding-right: 2em;
+}
+
+
+input {
+    position: relative;
+    float: right;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: rgba(238,243,243, 0.4);
+    border-radius: 2px 2px;
+    top: -3.6em;
+    margin-right: 2em;
+    padding:0.5em;
+    line-height: 1em;
+    vertical-align: center;
+}
+
+.loupe
+{
+    width: 1.5em;
+    height: 1.5em;  
+}
+
+button
+{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    top: -3.4em;
+    background-color: white;
+    border-style: none;
+}
+
+/* Menu de navigation déroulant */
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    position: sticky;
+    top: 0em;
+}
+
+nav ul
+{
+    display: flex; /*Permet aux éléments de la barre d'être alignés*/
+    position: sticky;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 0.625em 0em; /*Donne la largeur à la barre de nav*/
+}
+
+nav a:hover{
+    background-color: #F8D862;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #F8D862;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #EAC849;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* Meilleures ventes */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril-FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+}
+
+.best-sells {
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sells-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.pyjama {
+    background-image: url(../img/pyjama.jpg);
+}
+
+.poussette {
+    background-image: url(../img/poussette.jpg);
+}
+
+.produits {
+    background-image: url(../img/produits.jpg);
+}
+
+.biberon {
+    background-image: url(../img/biberon.jpg);
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.price {
+    color:  #ADD981;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+/* Nos produits */
+
+.all-produits {
+    margin:100px;
+}
+
+.produits-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (4, 400px);
+}
+
+.produits-grid1 {
+    background-image: url(../img/prod1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.produits-grid2 {
+    background-image: url(../img/prod2.jpg);
+    grid-column: 3/5;
+}
+
+.produits-grid3 {
+    background-image: url(../img/prod3.jpg);
+    grid-column: 3/5;
+}
+
+.produits-grid4 {
+    background-image: url(../img/prod4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.produits-grid5 {
+    background-image: url(../img/prod5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.produits-grid6 {
+    background-image: url(../img/prod6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* Pied de page */
+
+
+footer {
+    margin: 2em 6.2em 0em;
+    height: 10em;
+    background-color: #AF8D62;
+}
+
+
+.fin
+{
+    list-style-type: none;
+    color: white;
+    padding: 1em;
+    position: relative;
+    bottom: 0em;
+
+
+}
+
+.qui
+{
+    color: white;
+    text-decoration: none;
+}
+.titre_liste
+{
+    font-size: 2em;
+    color: #634C2E;
+    font-weight: 600;
+}
+
+
+.fini
+{
+    display: flex;
+}
+
+footer li {
+    padding-bottom: 0.5em;
+}
+
+.pied
+{
+    height: 2em;
+    background-color: #F8D862;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright, .cgv {
+    color: #634C2E;
+    padding: 1em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.5em;
+
+}
+
+footer a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+   html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+
+}
+
+/* Tête de page */
+
+
+
+section.top-page {
+    background: url('../img/coton.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Page de bienvenue (landing page */
+
+.landing-page {
+    padding: 20em 50em;
+}
+
+.big-title {
+    color: burlywood;
+    font-size: 60em;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 2000;
+}
+
+.message {
+    color: white;
+    padding-top: 50em;
+    font-size: 1em;
+}
+
+.promotions 
+{ 
+    background: url('../img/motifs4.jpg');
+    border: 1em rgb(235, 221, 175);
+    margin-bottom: 0.1em;
+    background-color: rgb(70, 7, 5);
+    border-radius: 10em;
+    box-shadow: 0.2em 0.5em rgba(187, 179, 166, 0.5);
+    text-decoration: none;
+}
+
+.promo_tigrou {
+    font-size:1em;
+    color: red;
+    padding: 0.5em 1em 0.1em 3em;
+    border-bottom : 0em dotted lightgrey;
+    text-decoration: none;
+}
+
+/*Première barre*/
+header
+{
+    background-color:white;
+}
+.logo
+{
+    height:4.375em;
+    width: 4.375em;
+    float:left;
+}
+
+.titre
+{
+    color: red ;
+    font-size:3.125em;
+    margin: 0em 0em 0em 8.9%;
+    padding: 0px 0em 10px 0em;
+
+}
+
+.home, .panier
+{
+    position:relative;
+    float: right;
+    height: 2.5em;
+    top: -3.6em;
+    padding-right: 2em;
+}
+
+
+input {
+    position: relative;
+    float: right;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: rgba(238,243,243, 0.4);
+    border-radius: 2px 2px;
+    top: 150em;
+    margin-right: 2em;
+    padding:0.5em;
+    width: 8em;
+    line-height: 1em;
+    vertical-align: center;
+    font-size: 0.5em;
+}
+
+.loupe
+{
+    width: 1em;
+    height: 1em;  
+}
+
+button
+{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    float: right;
+    top: -3.4em;
+    background-color: white;
+    border-style: none;
+}
+
+/* Menu de navigation déroulant */
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    position: sticky;
+    top: 0em;
+}
+
+nav ul
+{
+    display: flex; /*Permet aux éléments de la barre d'être alignés*/
+    position: sticky;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 0.7em;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 0.625em 0em; /*Donne la largeur à la barre de nav*/
+}
+
+nav a:hover{
+    background-color: #F8D862;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #F8D862;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #EAC849;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* Meilleures ventes */
+
+.section-title {
+    font-size: 3em;
+    font-family: 'Abril-FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 6.25em;
+}
+
+.best-sells {
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sells-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 15em;
+    height: 20em;
+    flex: 1;
+}
+
+.pyjama {
+    background-image: url(../img/pyjama.jpg);
+}
+
+.poussette {
+    background-image: url(../img/poussette.jpg);
+}
+
+.produits {
+    background-image: url(../img/produits.jpg);
+}
+
+.biberon {
+    background-image: url(../img/biberon.jpg);
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.name {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.price {
+    color:  #ADD981;
+    line-height: 40px;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+
+/* Nos produits */
+
+.all-produits {
+    margin:100px;
+}
+
+.produits-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (4, 400px);
+}
+
+.produits-grid1 {
+    background-image: url(../img/prod1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.produits-grid2 {
+    background-image: url(../img/prod2.jpg);
+    grid-column: 3/5;
+}
+
+.produits-grid3 {
+    background-image: url(../img/prod3.jpg);
+    grid-column: 3/5;
+}
+
+.produits-grid4 {
+    background-image: url(../img/prod4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.produits-grid5 {
+    background-image: url(../img/prod5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.produits-grid6 {
+    background-image: url(../img/prod6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* Pied de page */
+
+
+footer {
+    margin: 2em 6.2em 0em;
+    height: 6.5em;
+    background-color: #AF8D62;
+}
+
+
+.fin
+{
+    list-style-type: none;
+    color: white;
+    padding: 1em;
+    position: relative;
+    bottom: 0em;
+    font-size: 0.6em;
+
+
+}
+
+.qui
+{
+    color: white;
+    text-decoration: none;
+}
+.titre_liste
+{
+    font-size: 2em;
+    color: #634C2E;
+    font-weight: 600;
+}
+
+
+.fini
+{
+    display: flex;
+}
+
+footer li {
+    padding-bottom: 0.5em;
+}
+
+.pied
+{
+    height: 1.5em;
+    background-color: #F8D862;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em
+}
+
+.copyright, .cgv {
+    color: #634C2E;
+    padding: 1em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.5em;
+    font-size: 0.7em;
+
+}
+
+footer a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+}
+
+}
+
+
+
+
+
